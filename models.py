@@ -29,6 +29,7 @@ class WeatherDay(BaseModel):
     wind_max_speed: float = Field(..., description="Maximum wind speed in m/s")
     humidity_afternoon: float = Field(..., description="Afternoon humidity percentage")
     cloud_cover_afternoon: float = Field(..., description="Afternoon cloud cover percentage")
+    weather_category: str = Field(..., description="ML-predicted weather category")
 
 
 class WeatherPlanningResponse(BaseModel):

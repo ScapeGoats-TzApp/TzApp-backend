@@ -6,9 +6,10 @@ from datetime import datetime
 from typing import Dict, List
 
 from weather_service import WeatherPlannerService
+from weather_script import WeatherModel, WeatherData
 from models import (
-    WeatherPlanningRequest,
-    WeatherPlanningResponse,
+    WeatherPlanningRequest, 
+    WeatherPlanningResponse, 
     WeatherDay,
     AvailableOptionsResponse,
     EventCriteriaResponse,
@@ -16,6 +17,7 @@ from models import (
     ErrorResponse
 )
 
+# Initialize FastAPI app
 app = FastAPI(
     title="TzApp Weather Planning API",
     description="API pentru planificarea evenimentelor în funcție de vreme",
@@ -39,11 +41,20 @@ app.add_middleware(
     expose_headers=["*"]
 )
 
+# Initialize weather service
 try:
     weather_service = WeatherPlannerService()
 except FileNotFoundError as e:
     print(f"Warning: {e}")
     weather_service = None
+
+# Initialize ML weather model
+try:
+    weather_model = WeatherModel()
+    print("Weather ML model loaded successfully!")
+except Exception as e:
+    print(f"Warning: Could not load weather ML model: {e}")
+    weather_model = None
 
 
 @app.get("/", tags=["General"])
@@ -88,6 +99,7 @@ async def plan_event(request: WeatherPlanningRequest):
                 message="Nu s-au găsit date pentru această perioadă"
             )
 
+        # Convert DataFrame to list of WeatherDay objects
         best_days = []
         for _, row in best_days_df.iterrows():
             weather_day = WeatherDay(
@@ -97,7 +109,8 @@ async def plan_event(request: WeatherPlanningRequest):
                 precip=round(row['precip'], 2),
                 wind_max_speed=round(row['wind_max_speed'], 2),
                 humidity_afternoon=round(row['humidity_afternoon'], 1),
-                cloud_cover_afternoon=round(row['cloud_cover_afternoon'], 1)
+                cloud_cover_afternoon=round(row['cloud_cover_afternoon'], 1),
+                weather_category=row['weather_category']
             )
             best_days.append(weather_day)
         
@@ -162,15 +175,95 @@ async def get_event_criteria(event: str):
     )
 
 
+@app.post("/categorize-weather", tags=["Weather Analysis"])
+async def categorize_weather(weather_data: WeatherData):
+    """
+    Categorizează vremea pe baza datelor meteorologice folosind logica de categorii
+    """
+    try:
+        # Use rule-based categorization instead of broken ML model
+        temp = weather_data.temperature
+        precip = weather_data.precipitation
+        
+        # Apply categorization logic in correct priority order
+        if (temp <= 0) and (precip > 0.001):
+            prediction = "snow"
+        elif precip >= 0.03:
+            prediction = "heavy_rain"
+        elif (precip >= 0.005) and (precip < 0.03):
+            prediction = "light_rain"
+        elif temp >= 20:
+            prediction = "hot"
+        elif (temp < 10) and (precip < 0.005):
+            prediction = "cold"
+        elif (temp >= 10) and (temp < 20) and (precip < 0.005):
+            prediction = "sunny"
+        else:
+            prediction = "sunny"  # default
+        
+        return {
+            "success": True,
+            "weather_category": prediction,
+            "input_data": weather_data.model_dump(),
+            "message": f"Vremea a fost categorizată ca: {prediction}"
+        }
+        
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Eroare la categorizarea vremii: {str(e)}")
+
+
+@app.post("/debug-categories", tags=["Debug"])
+async def debug_categories(weather_data: WeatherData):
+    """
+    Debug endpoint to see category logic
+    """
+    if weather_model is None:
+        raise HTTPException(status_code=500, detail="Model ML indisponibil")
+    
+    # Test category logic manually
+    temp = weather_data.temperature
+    precip = weather_data.precipitation
+    
+    # Test conditions from weather_script.py
+    conditions = {
+        'snow': (temp <= 0) and (precip > 0.001),
+        'heavy_rain': precip >= 0.03,
+        'light_rain': (precip >= 0.005) and (precip < 0.03),
+        'hot': temp >= 20,
+        'cold': (temp < 10) and (precip < 0.005),
+        'sunny': (temp >= 10) and (temp < 20) and (precip < 0.005)
+    }
+    
+    # Get ML prediction
+    ml_prediction = weather_model.predict_weather_optimized(
+        temperature=weather_data.temperature,
+        precipitation=weather_data.precipitation,
+        wind=weather_data.wind,
+        relative_humidity=weather_data.relative_humidity,
+        altitude=weather_data.altitude,
+        air_pressure=weather_data.air_pressure
+    )
+    
+    return {
+        "input": weather_data.dict(),
+        "category_conditions": conditions,
+        "ml_prediction": ml_prediction,
+        "expected_by_logic": next((k for k, v in conditions.items() if v), 'sunny')
+    }
+
 @app.get("/health", tags=["General"])
 async def health_check():
     """
     Health check endpoint
     """
     service_status = "available" if weather_service is not None else "unavailable"
+    model_status = "available" if weather_model is not None else "unavailable"
     return {
         "status": "healthy",
         "weather_service": service_status,
+        "ml_model": model_status,
         "timestamp": datetime.now().isoformat()
     }
 

@@ -4,6 +4,14 @@ import numpy as np
 from typing import Dict, Tuple, List, Optional
 import os
 
+# Try to import weather model, but don't fail if it's not available
+try:
+    from weather_script import WeatherModel
+    ML_MODEL_AVAILABLE = True
+except ImportError:
+    ML_MODEL_AVAILABLE = False
+    print("Warning: WeatherModel not available, will use default categorization")
+
 
 CITY_COORDINATES = {
     'Alba': (46.06667, 23.58333),
@@ -91,11 +99,22 @@ class WeatherPlannerService:
         """Initialize the weather planner service with the CSV file path"""
         self.csv_file_path = csv_file_path
         if not os.path.exists(csv_file_path):
+            # Try alternative path
             alternative_path = "SmartPlanner/weather_data.csv"
             if os.path.exists(alternative_path):
                 self.csv_file_path = alternative_path
             else:
                 raise FileNotFoundError(f"Weather data file not found at {csv_file_path}")
+        
+        # Initialize ML model if available
+        self.ml_model = None
+        if ML_MODEL_AVAILABLE:
+            try:
+                self.ml_model = WeatherModel()
+                print("ML Weather model loaded successfully in WeatherPlannerService!")
+            except Exception as e:
+                print(f"Could not load ML model: {e}")
+                self.ml_model = None
     
     @staticmethod
     def kelvin_to_celsius(temp_k: float) -> float:
@@ -187,6 +206,9 @@ class WeatherPlannerService:
         
         best_days['temp_celsius'] = best_days['afternoon_temp'].apply(self.kelvin_to_celsius)
         
+        # Add weather categorization using ML model
+        best_days['weather_category'] = best_days.apply(self.categorize_weather_ml, axis=1)
+        
         return best_days
 
     def get_available_cities(self) -> List[str]:
@@ -200,3 +222,61 @@ class WeatherPlannerService:
     def get_event_criteria(self, event: str) -> Optional[Dict]:
         """Get criteria for a specific event"""
         return EVENT_CRITERIA.get(event)
+
+    def categorize_weather_ml(self, row: pd.Series) -> str:
+        """
+        Categorize weather using ML model based on weather data
+        Falls back to simple categorization if ML model is not available
+        """
+        if self.ml_model is not None:
+            try:
+                # Convert temperature from Kelvin to Celsius for ML model
+                temp_celsius = self.kelvin_to_celsius(row['afternoon_temp'])
+                
+                # Extract weather parameters (using default values if missing)
+                precipitation = row.get('precip', 0.0)
+                wind = row.get('wind_max_speed', 0.0)
+                humidity = row.get('humidity_afternoon', 50.0)
+                
+                # Use default values for missing data
+                altitude = 100.0  # Default altitude
+                air_pressure = 1013.25  # Standard air pressure
+                
+                # Get ML prediction
+                category = self.ml_model.predict_weather_optimized(
+                    temperature=temp_celsius,
+                    precipitation=precipitation,
+                    wind=wind,
+                    relative_humidity=humidity,
+                    altitude=altitude,
+                    air_pressure=air_pressure
+                )
+                
+                return category
+                
+            except Exception as e:
+                print(f"ML categorization failed: {e}, using fallback")
+                return self._fallback_categorization(row)
+        else:
+            return self._fallback_categorization(row)
+    
+    def _fallback_categorization(self, row: pd.Series) -> str:
+        """
+        Simple weather categorization when ML model is not available
+        """
+        temp_celsius = self.kelvin_to_celsius(row['afternoon_temp'])
+        precipitation = row.get('precip', 0.0)
+        
+        # Simple rules for weather categorization
+        if temp_celsius <= 0 and precipitation > 0.001:
+            return "snow"
+        elif precipitation >= 0.03:
+            return "heavy_rain"
+        elif precipitation >= 0.005:
+            return "light_rain"
+        elif temp_celsius >= 20:
+            return "hot"
+        elif temp_celsius < 10:
+            return "cold"
+        else:
+            return "sunny"

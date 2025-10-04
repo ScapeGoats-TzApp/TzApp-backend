@@ -1,0 +1,602 @@
+nohup: ignoring input
+INFO:     Will watch for changes in these directories: ['/home/luca/Tzapp/Backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [48658] using StatReload
+Warning: Weather data file not found at ../SmartPlanner/weather_data.csv
+Weather ML model loaded successfully!
+INFO:     Started server process [48731]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Warning: Weather data file not found at ../SmartPlanner/weather_data.csv
+Weather ML model loaded successfully!
+Warning: Weather data file not found at ../SmartPlanner/weather_data.csv
+Weather ML model loaded successfully!
+INFO:     127.0.0.1:52574 - "GET / HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48748 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46768 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46768 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46780 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46796 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46806 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:46780 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46818 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:46806 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:46796 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:46830 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:46818 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:46830 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42348 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42360 - "GET / HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:34180 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:34192 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:37312 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:53596 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35284 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35284 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35296 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35306 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35318 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35332 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35346 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35346 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35346 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35346 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35346 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35362 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35362 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35368 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35378 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35388 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:35368 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:41684 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:41684 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:41684 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:41684 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:41684 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:41684 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:34158 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:34158 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:34170 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:34184 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:34190 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:34170 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32960 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32960 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32960 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32960 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32960 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32960 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56376 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56376 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56386 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56392 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56396 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56402 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56416 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56416 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56416 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56416 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56416 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56416 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32776 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32776 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32790 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32806 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32808 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32818 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32790 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32806 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32818 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32808 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32824 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32824 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32840 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32840 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32840 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32840 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32840 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:32840 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52198 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:52198 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52206 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52212 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52220 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52206 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52220 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:52212 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:52198 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:52212 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:52198 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:52212 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48658 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48658 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48662 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48666 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48670 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48666 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48662 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48670 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48658 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48670 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48658 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48670 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:58436 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:58808 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:58822 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56052 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48022 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48024 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48034 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48022 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48050 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48024 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48064 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48034 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48050 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48064 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48066 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48066 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48066 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48066 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48066 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48066 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48066 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48070 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48074 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48086 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48102 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:48118 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51126 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51126 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51132 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51140 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51154 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51160 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51176 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51188 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:57270 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:57278 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51166 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51166 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51166 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51166 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51166 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51166 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51166 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:51166 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:58464 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:58468 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:58470 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:58480 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:58480 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:58494 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:58494 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:58480 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:58494 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56038 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56038 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56022 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56042 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56022 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56042 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:56038 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:49426 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:49426 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:49452 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:49442 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:49452 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:49442 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:54852 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:54852 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:54858 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:54858 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:54852 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:54858 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52698 - "GET /health HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:59022 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:59028 - "POST /categorize-weather HTTP/1.1" 200 OK
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+INFO:     127.0.0.1:52386 - "POST /categorize-weather HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [48731]
+INFO:     Started server process [55223]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+/home/luca/Tzapp/Backend/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+Warning: Weather data file not found at ../SmartPlanner/weather_data.csv
+Weather ML model loaded successfully!
+Warning: Weather data file not found at ../SmartPlanner/weather_data.csv
+Weather ML model loaded successfully!
+INFO:     127.0.0.1:49404 - "POST /debug-categories HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [55223]
+INFO:     Started server process [55441]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Warning: Weather data file not found at ../SmartPlanner/weather_data.csv
+Weather ML model loaded successfully!
+Warning: Weather data file not found at ../SmartPlanner/weather_data.csv
+Weather ML model loaded successfully!
+INFO:     127.0.0.1:37808 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44612 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44618 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44624 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57908 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59322 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59332 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35534 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35534 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35542 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35544 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35550 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35560 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35568 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35568 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35568 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35568 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35568 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49404 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49404 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49406 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49408 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49424 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49406 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49406 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49404 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49424 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49408 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49424 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42188 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42188 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42190 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42188 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42190 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42188 - "POST /categorize-weather HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [55441]
+INFO:     Started server process [56337]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Warning: Weather data file not found at ../SmartPlanner/weather_data.csv
+Weather ML model loaded successfully!
+Warning: Weather data file not found at ../SmartPlanner/weather_data.csv
+Weather ML model loaded successfully!
+INFO:     127.0.0.1:39692 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39692 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39704 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39716 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39718 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39722 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44588 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44588 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44600 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44610 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44600 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44612 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44610 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44628 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44640 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44612 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44628 - "OPTIONS /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44640 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44640 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44640 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44640 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44640 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44640 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44640 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44644 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44644 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44640 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44648 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44506 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44518 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44530 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44506 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44534 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44518 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44530 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44542 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44534 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44538 - "POST /categorize-weather HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41742 - "POST /categorize-weather HTTP/1.1" 200 OK

@@ -114,7 +114,6 @@ class WeatherModel:
 		joblib.dump({'model': model, 'label_encoder': self.label}, self.model_fname_)
 		return model
 
-
 	def predict_weather_optimized(self, temperature, precipitation, wind, relative_humidity, altitude, air_pressure):
 		try:
 			# Validare input
