@@ -91,7 +91,6 @@ class WeatherPlannerService:
         """Initialize the weather planner service with the CSV file path"""
         self.csv_file_path = csv_file_path
         if not os.path.exists(csv_file_path):
-            # Try alternative path
             alternative_path = "SmartPlanner/weather_data.csv"
             if os.path.exists(alternative_path):
                 self.csv_file_path = alternative_path
@@ -108,10 +107,8 @@ class WeatherPlannerService:
         """Calculate score for a day based on event criteria"""
         score = 0
         
-        # Convert temperature from Kelvin to Celsius
         temp_c = WeatherPlannerService.kelvin_to_celsius(row['afternoon_temp'])
         
-        # Temperature score (0-30 points)
         temp_min, temp_max = criteria['temp_range']
         if temp_min <= temp_c <= temp_max:
             score += 30
@@ -119,25 +116,21 @@ class WeatherPlannerService:
             temp_penalty = min(abs(temp_c - temp_min), abs(temp_c - temp_max))
             score += max(0, 30 - temp_penalty * 2)
         
-        # Precipitation score (0-25 points)
         if row['precip'] <= criteria['max_precip']:
             score += 25
         else:
             score += max(0, 25 - (row['precip'] - criteria['max_precip']) * 10)
         
-        # Wind score (0-20 points)
         if row['wind_max_speed'] <= criteria['max_wind']:
             score += 20
         else:
             score += max(0, 20 - (row['wind_max_speed'] - criteria['max_wind']) * 3)
         
-        # Humidity score (0-15 points)
         if row['humidity_afternoon'] <= criteria['max_humidity']:
             score += 15
         else:
             score += max(0, 15 - (row['humidity_afternoon'] - criteria['max_humidity']) * 0.3)
         
-        # Cloud coverage score (0-10 points)
         if row['cloud_cover_afternoon'] <= criteria['max_clouds']:
             score += 10
         else:
@@ -168,15 +161,12 @@ class WeatherPlannerService:
             available_events = ", ".join(EVENT_CRITERIA.keys())
             raise ValueError(f"Event '{event}' not available. Available events: {available_events}")
         
-        # Read CSV file
         df = pd.read_csv(self.csv_file_path)
         df['date'] = pd.to_datetime(df['date'])
         
-        # Filter by city coordinates
         city_lat, city_lon = CITY_COORDINATES[city]
         city_data = df[(df['lat'] == city_lat) & (df['lon'] == city_lon)].copy()
         
-        # Filter by month and year
         month_data = city_data[
             (city_data['date'].dt.month == month) &
             (city_data['date'].dt.year == year)
@@ -184,20 +174,17 @@ class WeatherPlannerService:
         
         if month_data.empty:
             return pd.DataFrame()
-        
-        # Calculate scores
+
         criteria = EVENT_CRITERIA[event]
         month_data['score'] = month_data.apply(
             lambda row: self.calculate_event_score(row, criteria), axis=1
         )
         
-        # Get best days
         best_days = month_data.nlargest(limit, 'score')[
             ['date', 'score', 'afternoon_temp', 'precip', 'wind_max_speed', 
              'humidity_afternoon', 'cloud_cover_afternoon']
         ].copy()
         
-        # Add temperature in Celsius
         best_days['temp_celsius'] = best_days['afternoon_temp'].apply(self.kelvin_to_celsius)
         
         return best_days

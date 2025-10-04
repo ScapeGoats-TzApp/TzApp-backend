@@ -8,8 +8,8 @@ class WeatherPlanningRequest(BaseModel):
     city: str = Field(..., description="City name")
     event: str = Field(..., description="Event type")
     month: int = Field(..., ge=1, le=12, description="Month (1-12)")
-    year: int = Field(2025, ge=2020, le=2030, description="Year")
-    limit: int = Field(5, ge=1, le=10, description="Number of best days to return")
+    year: int = Field(2025, ge=2020, le=2026, description="Year")
+    limit: int = Field(5, ge=1, le=5, description="Number of best days to return")
 
     @validator('city')
     def validate_city(cls, v):

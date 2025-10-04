@@ -7,8 +7,8 @@ from typing import Dict, List
 
 from weather_service import WeatherPlannerService
 from models import (
-    WeatherPlanningRequest, 
-    WeatherPlanningResponse, 
+    WeatherPlanningRequest,
+    WeatherPlanningResponse,
     WeatherDay,
     AvailableOptionsResponse,
     EventCriteriaResponse,
@@ -16,24 +16,22 @@ from models import (
     ErrorResponse
 )
 
-# Initialize FastAPI app
 app = FastAPI(
     title="TzApp Weather Planning API",
     description="API pentru planificarea evenimentelor în funcție de vreme",
     version="1.0.0"
 )
 
-# Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",  # React dev server
-        "http://localhost:5173",  # Vite dev server
+        "http://localhost:3000",
+        "http://localhost:5173",
         "http://127.0.0.1:3000",
         "http://127.0.0.1:5173",
-        "http://localhost:8080",  # Alternative frontend ports
+        "http://localhost:8080",
         "http://127.0.0.1:8080",
-        "*"  # Allow all origins for development - remove in production
+        "*"
     ],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
@@ -41,7 +39,6 @@ app.add_middleware(
     expose_headers=["*"]
 )
 
-# Initialize weather service
 try:
     weather_service = WeatherPlannerService()
 except FileNotFoundError as e:
@@ -72,7 +69,6 @@ async def plan_event(request: WeatherPlanningRequest):
         raise HTTPException(status_code=500, detail="Weather service not available - data file not found")
     
     try:
-        # Get best days from weather service
         best_days_df = weather_service.find_best_days(
             city=request.city,
             event=request.event,
@@ -91,8 +87,7 @@ async def plan_event(request: WeatherPlanningRequest):
                 best_days=[],
                 message="Nu s-au găsit date pentru această perioadă"
             )
-        
-        # Convert DataFrame to list of WeatherDay objects
+
         best_days = []
         for _, row in best_days_df.iterrows():
             weather_day = WeatherDay(
@@ -152,8 +147,7 @@ async def get_event_criteria(event: str):
             status_code=404, 
             detail=f"Evenimentul '{event}' nu există. Evenimente disponibile: {', '.join(available_events)}"
         )
-    
-    # Convert tuple to proper format for response
+
     criteria = EventCriteria(
         temp_range=criteria_dict['temp_range'],
         max_precip=criteria_dict['max_precip'],
